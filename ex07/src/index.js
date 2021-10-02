@@ -6,7 +6,12 @@ const range = {
     average: 45.325
 };
 
-const middle = (range) => (range.max + range.min) / 2.0;
+const middle = ({ max, min }) => {
+   if(range) {
+       (max + min) / 2.0;
+   }
+}
+
 
 console.log(middle(range));
 module.exports = middle;
